@@ -1,0 +1,598 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<title>Maquette — Association des Anciens Étudiants</title>
+<style>
+:root{
+  --vert:#16643E;
+  --vert-fonce:#0E4429;
+  --vert-clair:#E7F0EA;
+  --orange:#E0761B;
+  --orange-fonce:#B85E12;
+  --creme:#FAF7F2;
+  --creme-2:#F2ECE2;
+  --encre:#1C2420;
+  --gris:#6B7570;
+  --ligne:#DED7CB;
+  --serif:"Iowan Old Style","Palatino Linotype",Palatino,Georgia,"Times New Roman",serif;
+  --sans:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;
+}
+*{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%}
+body{margin:0;background:var(--creme);color:var(--encre);font-family:var(--sans);font-size:16px;line-height:1.65;-webkit-font-smoothing:antialiased}
+img{max-width:100%;display:block}
+a{color:inherit}
+h1,h2,h3,h4{font-family:var(--serif);font-weight:600;line-height:1.2;margin:0;letter-spacing:-.01em}
+.wrap{width:100%;max-width:1180px;margin:0 auto;padding:0 20px}
+
+/* ---------- bandeau maquette ---------- */
+.maquette-bar{background:#2B2B2B;color:#F3EFE8;font-size:12.5px;line-height:1.45;padding:9px 0;text-align:center;letter-spacing:.01em}
+.maquette-bar b{color:#FFC98A;font-weight:600}
+
+/* ---------- barre utilitaire ---------- */
+.util{background:var(--vert-fonce);color:#CFE0D5;font-size:13px}
+.util .wrap{display:flex;align-items:center;justify-content:space-between;gap:16px;min-height:38px;flex-wrap:wrap}
+.util-left{display:flex;align-items:center;gap:18px}
+.util a{text-decoration:none;opacity:.9}
+.util a:hover{opacity:1;color:#fff}
+.lang{display:flex;align-items:center;gap:8px}
+.lang span{padding:2px 8px;border-radius:3px}
+.lang .on{background:rgba(255,255,255,.14);color:#fff;font-weight:600}
+.lang .off{opacity:.45}
+.util-right{display:flex;align-items:center;gap:14px}
+.wa{display:inline-flex;align-items:center;gap:7px;background:#1FA855;color:#fff !important;padding:4px 11px;border-radius:100px;font-weight:600;font-size:12.5px;opacity:1 !important}
+
+/* ---------- entête ---------- */
+header.site{background:#fff;border-bottom:1px solid var(--ligne);position:sticky;top:0;z-index:40}
+header.site .wrap{display:flex;align-items:center;gap:20px;min-height:82px}
+.brand{display:flex;align-items:center;gap:13px;text-decoration:none;flex:1;min-width:0}
+.brand .seal{flex:0 0 auto}
+.brand-txt{min-width:0}
+.brand-name{font-family:var(--serif);font-size:19px;font-weight:700;color:var(--vert);line-height:1.15;letter-spacing:-.015em}
+.brand-sub{font-size:11px;letter-spacing:.1em;text-transform:uppercase;color:var(--gris);margin-top:3px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+nav.main{display:none}
+nav.main ul{display:flex;list-style:none;margin:0;padding:0;gap:2px}
+nav.main a{display:block;padding:9px 11px;text-decoration:none;font-size:14.5px;font-weight:500;color:var(--encre);border-radius:4px}
+nav.main a:hover{background:var(--vert-clair);color:var(--vert)}
+nav.main .caret{font-size:9px;opacity:.5;margin-left:3px;vertical-align:middle}
+.btn{display:inline-block;text-decoration:none;font-weight:600;border-radius:4px;padding:12px 20px;font-size:15px;text-align:center;border:1.5px solid transparent;transition:background .15s,color .15s}
+.btn-or{background:var(--orange);color:#fff}
+.btn-or:hover{background:var(--orange-fonce)}
+.btn-vert{background:var(--vert);color:#fff}
+.btn-vert:hover{background:var(--vert-fonce)}
+.btn-ghost{border-color:rgba(255,255,255,.55);color:#fff}
+.btn-ghost:hover{background:rgba(255,255,255,.12)}
+.btn-line{border-color:var(--vert);color:var(--vert)}
+.btn-line:hover{background:var(--vert-clair)}
+.header-cta{display:none}
+.burger{margin-left:auto;width:42px;height:42px;border:1px solid var(--ligne);background:#fff;border-radius:4px;display:flex;flex-direction:column;justify-content:center;align-items:center;gap:4px;cursor:pointer}
+.burger i{display:block;width:18px;height:2px;background:var(--vert)}
+
+/* ---------- héros ---------- */
+.hero{position:relative;background:var(--vert-fonce);color:#fff;overflow:hidden}
+.hero .photo-slot{position:absolute;inset:0;background:
+   repeating-linear-gradient(135deg,rgba(255,255,255,.028) 0 14px,transparent 14px 28px),
+   radial-gradient(120% 90% at 78% 8%,#1B7A4B 0%,#125636 45%,#0B3E26 100%);}
+.hero .photo-tag{position:absolute;right:14px;bottom:12px;font-size:11px;letter-spacing:.08em;text-transform:uppercase;color:rgba(255,255,255,.5);border:1px dashed rgba(255,255,255,.35);padding:4px 9px;border-radius:3px}
+.hero-inner{position:relative;padding:56px 0 62px}
+.eyebrow{display:inline-block;font-size:11.5px;letter-spacing:.16em;text-transform:uppercase;color:#F7C48C;border-left:3px solid var(--orange);padding-left:11px;margin-bottom:20px}
+.hero h1{font-size:33px;line-height:1.13;max-width:16ch}
+.hero .slogan{margin:18px 0 0;font-size:17px;line-height:1.55;color:#D6E5DB;max-width:46ch}
+.hero .slogan .ph{border-bottom:1px dashed rgba(255,255,255,.4)}
+.hero-actions{display:flex;flex-wrap:wrap;gap:12px;margin-top:30px}
+.hero-actions .btn{padding:13px 22px}
+.hero-links{margin-top:30px;padding-top:20px;border-top:1px solid rgba(255,255,255,.16);display:flex;flex-wrap:wrap;gap:9px 22px;font-size:14px}
+.hero-links a{color:#CFE0D5;text-decoration:none;display:inline-flex;align-items:center;gap:8px}
+.hero-links a:hover{color:#fff}
+.hero-links svg{opacity:.75}
+
+/* ---------- chiffres ---------- */
+.chiffres{background:#fff;border-bottom:1px solid var(--ligne)}
+.chiffres .grid{display:grid;grid-template-columns:repeat(2,1fr)}
+.chiffre{padding:26px 16px;text-align:center;border-right:1px solid var(--ligne);border-bottom:1px solid var(--ligne)}
+.chiffre:nth-child(2n){border-right:0}
+.chiffre .n{font-family:var(--serif);font-size:36px;font-weight:700;color:var(--vert);line-height:1;letter-spacing:-.02em}
+.chiffre .n.vide{color:var(--ligne)}
+.chiffre .l{font-size:12.5px;letter-spacing:.09em;text-transform:uppercase;color:var(--gris);margin-top:9px}
+
+/* ---------- sections ---------- */
+section{padding:56px 0}
+.sec-head{margin-bottom:30px}
+.sec-kicker{font-size:11.5px;letter-spacing:.16em;text-transform:uppercase;color:var(--orange);font-weight:700;margin-bottom:11px}
+.sec-head h2{font-size:27px;max-width:22ch}
+.sec-head p{color:var(--gris);margin:12px 0 0;max-width:60ch}
+.rule{width:54px;height:3px;background:var(--orange);border-radius:2px;margin-top:16px}
+
+/* intro */
+.intro{background:var(--creme-2)}
+.intro-grid{display:grid;gap:30px}
+.intro p.lead{font-size:18px;line-height:1.7;margin:0 0 16px}
+.ph{background:rgba(28,36,32,.055);border-bottom:1px dashed var(--gris);border-radius:2px;padding:0 3px;color:#4A544E}
+.valeurs{list-style:none;margin:22px 0 0;padding:0;display:grid;gap:11px}
+.valeurs li{display:flex;gap:11px;align-items:flex-start;font-size:15px}
+.valeurs .tick{flex:0 0 auto;width:20px;height:20px;border-radius:50%;background:var(--vert-clair);color:var(--vert);display:flex;align-items:center;justify-content:center;font-size:12px;font-weight:700;margin-top:2px}
+.aside-card{background:#fff;border:1px solid var(--ligne);border-radius:6px;padding:24px}
+.aside-card h3{font-size:18px;color:var(--vert)}
+.legal-list{list-style:none;margin:16px 0 0;padding:0;font-size:14.5px}
+.legal-list li{display:flex;justify-content:space-between;gap:14px;padding:10px 0;border-bottom:1px dotted var(--ligne)}
+.legal-list li:last-child{border-bottom:0}
+.legal-list span:first-child{color:var(--gris)}
+.legal-list span:last-child{text-align:right;font-weight:600}
+
+/* actualités */
+.news-grid{display:grid;gap:22px}
+.card{background:#fff;border:1px solid var(--ligne);border-radius:6px;overflow:hidden;display:flex;flex-direction:column}
+.card .img{aspect-ratio:16/10;background:
+  repeating-linear-gradient(135deg,#EDE6DA 0 12px,#E6DED0 12px 24px);
+  display:flex;align-items:center;justify-content:center;position:relative}
+.card .img .tag{font-size:10.5px;letter-spacing:.1em;text-transform:uppercase;color:#9A9082;border:1px dashed #C9BFAE;padding:5px 10px;border-radius:3px;background:rgba(255,255,255,.6)}
+.card .body{padding:19px 20px 22px;flex:1;display:flex;flex-direction:column}
+.cat{display:inline-block;align-self:flex-start;font-size:11px;letter-spacing:.09em;text-transform:uppercase;font-weight:700;color:var(--vert);background:var(--vert-clair);padding:4px 9px;border-radius:3px;margin-bottom:12px}
+.card h3{font-size:18px;line-height:1.3}
+.meta{font-size:13px;color:var(--gris);margin-top:11px}
+.card .more{margin-top:14px;font-size:14px;font-weight:600;color:var(--orange);text-decoration:none}
+.news-foot{margin-top:28px}
+
+/* événement */
+.event{background:var(--vert);color:#fff;border-radius:6px;padding:26px;display:grid;gap:22px}
+.event .kick{font-size:11.5px;letter-spacing:.16em;text-transform:uppercase;color:#F7C48C;font-weight:700}
+.event h3{font-size:22px;margin-top:12px}
+.event .when{margin-top:16px;display:grid;gap:9px;font-size:15px;color:#D6E5DB}
+.event .when div{display:flex;gap:10px;align-items:flex-start}
+.event .ph{background:rgba(255,255,255,.13);border-bottom-color:rgba(255,255,255,.45);color:#EAF3ED}
+.datebox{flex:0 0 auto;width:88px;height:88px;border:2px solid rgba(255,255,255,.3);border-radius:6px;display:flex;flex-direction:column;align-items:center;justify-content:center;line-height:1}
+.datebox .d{font-family:var(--serif);font-size:32px;font-weight:700}
+.datebox .m{font-size:11px;letter-spacing:.14em;text-transform:uppercase;margin-top:7px;color:#F7C48C}
+
+/* adhésion */
+.adhesion{background:var(--vert-fonce);color:#fff}
+.adh-grid{display:grid;gap:30px}
+.adhesion h2{font-size:27px;color:#fff}
+.adhesion .sec-kicker{color:#F7C48C}
+.adhesion p{color:#D6E5DB}
+.tarifs{display:grid;gap:14px;margin-top:6px}
+.tarif{background:rgba(255,255,255,.07);border:1px solid rgba(255,255,255,.16);border-radius:6px;padding:20px}
+.tarif .t{font-size:12px;letter-spacing:.1em;text-transform:uppercase;color:#F7C48C;font-weight:700}
+.tarif .v{font-family:var(--serif);font-size:29px;font-weight:700;margin-top:9px;line-height:1.1}
+.tarif .v small{font-family:var(--sans);font-size:14px;font-weight:500;color:#CFE0D5;letter-spacing:0}
+.tarif .n{font-size:13.5px;color:#CFE0D5;margin-top:9px}
+.paiement{margin-top:26px;padding-top:22px;border-top:1px solid rgba(255,255,255,.16)}
+.paiement .lbl{font-size:12px;letter-spacing:.1em;text-transform:uppercase;color:#9FBCAB;margin-bottom:13px}
+.moyens{display:flex;flex-wrap:wrap;gap:9px}
+.moyen{background:rgba(255,255,255,.1);border:1px solid rgba(255,255,255,.18);border-radius:4px;padding:8px 13px;font-size:13.5px;font-weight:600}
+.etapes{list-style:none;counter-reset:e;margin:0;padding:0;display:grid;gap:18px}
+.etapes li{counter-increment:e;display:flex;gap:15px;align-items:flex-start}
+.etapes li::before{content:counter(e);flex:0 0 auto;width:32px;height:32px;border-radius:50%;background:var(--orange);color:#fff;font-weight:700;display:flex;align-items:center;justify-content:center;font-size:15px}
+.etapes li > div{min-width:0}
+.etapes strong{display:block;font-size:15.5px}
+.etapes span{font-size:14px;color:#CFE0D5}
+
+/* projets */
+.proj-grid{display:grid;gap:22px}
+.proj{background:#fff;border:1px solid var(--ligne);border-radius:6px;padding:24px;border-top:3px solid var(--orange)}
+.proj h3{font-size:19px}
+.proj p{font-size:14.5px;color:var(--gris);margin:11px 0 0}
+.proj .kpi{margin-top:18px;padding-top:15px;border-top:1px dotted var(--ligne);display:flex;gap:22px}
+.proj .kpi div .n{font-family:var(--serif);font-size:23px;font-weight:700;color:var(--ligne)}
+.proj .kpi div .l{font-size:11.5px;letter-spacing:.08em;text-transform:uppercase;color:var(--gris)}
+
+/* partenaires */
+.partenaires{background:#fff;border-top:1px solid var(--ligne);border-bottom:1px solid var(--ligne);padding:44px 0}
+.logos{display:grid;grid-template-columns:repeat(2,1fr);gap:14px;margin-top:24px}
+.logo-slot{height:74px;border:1px dashed var(--ligne);border-radius:5px;display:flex;align-items:center;justify-content:center;font-size:11px;letter-spacing:.09em;text-transform:uppercase;color:#A99E8D;background:var(--creme)}
+
+/* bande finale */
+.bande{background:var(--orange);color:#fff;padding:46px 0}
+.bande h2{font-size:26px;color:#fff;max-width:20ch}
+.bande p{margin:13px 0 0;max-width:52ch;color:#FFF1E1}
+.bande .acts{display:flex;flex-wrap:wrap;gap:12px;margin-top:24px}
+.bande .btn-white{background:#fff;color:var(--orange-fonce)}
+.bande .btn-white:hover{background:#FFF3E6}
+
+/* pied */
+footer.site{background:var(--vert-fonce);color:#B9CFC2;font-size:14.5px;padding:48px 0 0}
+.f-grid{display:grid;gap:32px}
+footer h4{font-size:12px;letter-spacing:.13em;text-transform:uppercase;color:#F7C48C;margin-bottom:15px}
+footer ul{list-style:none;margin:0;padding:0}
+footer li{margin-bottom:9px}
+footer a{text-decoration:none;color:#B9CFC2}
+footer a:hover{color:#fff}
+.f-brand .brand-name{color:#fff}
+.f-brand .brand-sub{color:#8FA99A}
+.f-about{margin-top:16px;font-size:14px;line-height:1.6}
+.f-social{display:flex;gap:9px;margin-top:18px}
+.f-social a{width:36px;height:36px;border:1px solid rgba(255,255,255,.2);border-radius:50%;display:flex;align-items:center;justify-content:center}
+.f-social a:hover{background:rgba(255,255,255,.1)}
+.f-bottom{margin-top:38px;border-top:1px solid rgba(255,255,255,.14);padding:18px 0 26px;font-size:13px;display:flex;flex-wrap:wrap;gap:8px 20px;justify-content:space-between;color:#8FA99A}
+.f-bottom ul{display:flex;flex-wrap:wrap;gap:8px 18px}
+.f-bottom li{margin:0}
+
+/* ---------- >= 700px ---------- */
+@media (min-width:700px){
+  .hero-inner{padding:78px 0 84px}
+  .hero h1{font-size:46px}
+  .hero .slogan{font-size:19px}
+  .chiffres .grid{grid-template-columns:repeat(4,1fr)}
+  .chiffre{border-bottom:0}
+  .chiffre:nth-child(2n){border-right:1px solid var(--ligne)}
+  .chiffre:last-child{border-right:0}
+  .chiffre .n{font-size:42px}
+  section{padding:74px 0}
+  .sec-head h2{font-size:32px}
+  .news-grid{grid-template-columns:repeat(3,1fr)}
+  .proj-grid{grid-template-columns:repeat(3,1fr)}
+  .logos{grid-template-columns:repeat(4,1fr)}
+  .event{grid-template-columns:auto 1fr;padding:32px;align-items:start}
+  .tarifs{grid-template-columns:1fr 1fr}
+  .adh-grid{grid-template-columns:1.15fr .85fr;gap:48px}
+  .intro-grid{grid-template-columns:1.3fr .7fr;gap:48px}
+  .f-grid{grid-template-columns:1.6fr 1fr 1fr 1.1fr}
+  .adhesion h2,.sec-head h2{font-size:32px}
+  .bande h2{font-size:30px}
+  .bande .wrap{display:flex;align-items:center;justify-content:space-between;gap:36px}
+  .bande .acts{margin-top:0;flex-shrink:0}
+}
+/* ---------- >= 1000px ---------- */
+@media (min-width:1000px){
+  header.site .wrap{flex-wrap:wrap;min-height:0;row-gap:0}
+  .brand{flex:1;padding:15px 0}
+  .header-cta{display:inline-block;padding:10px 18px;font-size:14.5px;order:2}
+  .burger{display:none}
+  nav.main{display:block;flex:0 0 100%;border-top:1px solid var(--ligne);order:3}
+  nav.main ul{gap:0}
+  nav.main a{padding:12px 14px;font-size:14.5px;white-space:nowrap;border-radius:0}
+  nav.main li:first-child a{padding-left:0}
+  .hero h1{font-size:52px}
+}
+</style>
+</head>
+<body>
+
+<div class="maquette-bar">
+  MAQUETTE DE PRÉSENTATION — <b>tous les textes, chiffres, photos et l'emblème sont des espaces réservés</b>, à remplacer par vos contenus. Les chiffres clés restent volontairement vides.
+</div>
+
+<div class="util">
+  <div class="wrap">
+    <div class="util-left">
+      <div class="lang"><span class="on">FR</span><span class="off">EN — bientôt</span></div>
+      <a href="#">Espace membres</a>
+    </div>
+    <div class="util-right">
+      <a href="#">Korhogo, Côte d'Ivoire</a>
+      <a class="wa" href="#">
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2zm5.5 14.2c-.2.7-1.3 1.3-1.9 1.3-.5 0-1.1.2-3.6-.8-3-1.3-4.9-4.4-5-4.6-.2-.2-1.2-1.6-1.2-3s.7-2.1 1-2.4c.3-.3.6-.4.8-.4h.6c.2 0 .4 0 .7.5l1 2.3c.1.2.1.4 0 .6l-.4.6-.3.3c-.1.2-.3.3-.1.6.2.3.8 1.3 1.7 2.1 1.2 1 2.1 1.4 2.4 1.5.3.1.4.1.6-.1l.9-1c.2-.2.4-.2.6-.1l2.1 1c.3.2.5.2.6.4.1.1.1.6-.1 1.2z"/></svg>
+        WhatsApp
+      </a>
+    </div>
+  </div>
+</div>
+
+<header class="site">
+  <div class="wrap">
+    <a class="brand" href="#">
+      <span class="seal">
+        <svg width="46" height="46" viewBox="0 0 64 64" role="img" aria-label="Emblème provisoire">
+          <circle cx="32" cy="32" r="30" fill="#16643E"/>
+          <circle cx="32" cy="32" r="30" fill="none" stroke="#E0761B" stroke-width="3"/>
+          <circle cx="32" cy="32" r="23.5" fill="none" stroke="rgba(255,255,255,.35)" stroke-width="1" stroke-dasharray="3 4"/>
+          <path d="M17 38.5c4.5-2.6 9.5-2.6 15 0 5.5-2.6 10.5-2.6 15 0v3.2c-4.5-2.6-9.5-2.6-15 0-5.5-2.6-10.5-2.6-15 0z" fill="#fff" opacity=".92"/>
+          <path d="M17 30.5c4.5-2.6 9.5-2.6 15 0 5.5-2.6 10.5-2.6 15 0v6.4c-4.5-2.6-9.5-2.6-15 0-5.5-2.6-10.5-2.6-15 0z" fill="#fff" opacity=".55"/>
+          <path d="M32 30.5v11.7" stroke="#16643E" stroke-width="1.4"/>
+          <circle cx="32" cy="20" r="4.2" fill="#E0761B"/>
+        </svg>
+      </span>
+      <span class="brand-txt">
+        <span class="brand-name">Association des Anciens Étudiants</span>
+        <span class="brand-sub">Nom officiel à insérer — Korhogo</span>
+      </span>
+    </a>
+
+    <nav class="main">
+      <ul>
+        <li><a href="#">L'Association <span class="caret">▾</span></a></li>
+        <li><a href="#">Adhésion</a></li>
+        <li><a href="#">Actualités</a></li>
+        <li><a href="#">Événements</a></li>
+        <li><a href="#">Projets</a></li>
+        <li><a href="#">Opportunités</a></li>
+        <li><a href="#">Documents</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+    </nav>
+
+    <a class="btn btn-or header-cta" href="#">Payer ma cotisation</a>
+    <button class="burger" aria-label="Menu"><i></i><i></i><i></i></button>
+  </div>
+</header>
+
+<div class="hero">
+  <div class="photo-slot"></div>
+  <span class="photo-tag">Photo d'assemblée générale à fournir</span>
+  <div class="wrap hero-inner">
+    <span class="eyebrow">Association d'anciens étudiants · Constituée le 29 août 2026</span>
+    <h1>Le réseau de nos diplômés, où qu'ils soient.</h1>
+    <p class="slogan"><span class="ph">Votre slogan officiel viendra ici</span> — une phrase courte, à fournir par le bureau exécutif.</p>
+    <div class="hero-actions">
+      <a class="btn btn-or" href="#">Adhérer</a>
+      <a class="btn btn-ghost" href="#">Payer ma cotisation</a>
+      <a class="btn btn-ghost" href="#">Nous soutenir</a>
+      <a class="btn btn-ghost" href="#">Nous contacter</a>
+    </div>
+    <div class="hero-links">
+      <a href="#"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 3H7a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V8z"/><path d="M14 3v5h5"/></svg> Statuts (PDF)</a>
+      <a href="#"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 3H7a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V8z"/><path d="M14 3v5h5"/></svg> Règlement intérieur (PDF)</a>
+      <a href="#"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 3H7a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V8z"/><path d="M14 3v5h5"/></svg> Formulaire d'adhésion</a>
+    </div>
+  </div>
+</div>
+
+<div class="chiffres">
+  <div class="wrap">
+    <div class="grid">
+      <div class="chiffre"><div class="n vide">—</div><div class="l">Membres</div></div>
+      <div class="chiffre"><div class="n vide">—</div><div class="l">Promotions</div></div>
+      <div class="chiffre"><div class="n vide">—</div><div class="l">Pays représentés</div></div>
+      <div class="chiffre"><div class="n">2026</div><div class="l">Année de création</div></div>
+    </div>
+  </div>
+</div>
+
+<section class="intro">
+  <div class="wrap intro-grid">
+    <div>
+      <div class="sec-kicker">Qui sommes-nous</div>
+      <h2>Une association d'anciens étudiants, au service de ses membres</h2>
+      <div class="rule"></div>
+      <p class="lead" style="margin-top:24px"><span class="ph">Première phrase de présentation : qui vous êtes, à fournir par le bureau.</span></p>
+      <p class="lead"><span class="ph">Deuxième phrase : votre mission principale, à fournir.</span></p>
+      <p class="lead"><span class="ph">Troisième phrase : votre ambition pour les années à venir, à fournir.</span></p>
+      <ul class="valeurs">
+        <li><span class="tick">✓</span><span><strong>Mission, vision et valeurs</strong> — reprises des Statuts, à insérer.</span></li>
+        <li><span class="tick">✓</span><span><strong>Objectifs statutaires</strong> — liste à insérer depuis les Statuts.</span></li>
+        <li><span class="tick">✓</span><span><strong>Histoire</strong> — de l'université et de l'association, à insérer.</span></li>
+      </ul>
+      <p style="margin-top:26px"><a class="btn btn-line" href="#">En savoir plus sur l'association</a></p>
+    </div>
+    <aside class="aside-card">
+      <h3>Informations légales</h3>
+      <ul class="legal-list">
+        <li><span>Constitution</span><span>29 août 2026</span></li>
+        <li><span>Siège social</span><span>Korhogo, Côte d'Ivoire</span></li>
+        <li><span>Références de déclaration</span><span class="ph">à fournir</span></li>
+        <li><span>Mandat du bureau</span><span>2026 – 2028</span></li>
+      </ul>
+      <p style="margin-top:20px;font-size:14px;color:var(--gris)">Le bureau exécutif et le commissariat aux comptes disposent chacun de leur page, entièrement modifiable depuis le tableau de bord après chaque élection.</p>
+      <p style="margin-top:16px"><a class="btn btn-line" style="width:100%" href="#">Le bureau exécutif</a></p>
+    </aside>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <div class="sec-head">
+      <div class="sec-kicker">Actualités</div>
+      <h2>Dernières nouvelles de l'association</h2>
+      <p>Les trois publications les plus récentes s'affichent automatiquement ici. Catégories prévues : Communiqués, Vie de l'association, Solidarité, Université.</p>
+    </div>
+    <div class="news-grid">
+      <article class="card">
+        <div class="img"><span class="tag">Image à fournir</span></div>
+        <div class="body">
+          <span class="cat">Communiqués</span>
+          <h3><span class="ph">Titre de l'article — à fournir</span></h3>
+          <div class="meta">Date de publication · Auteur</div>
+          <a class="more" href="#">Lire la suite →</a>
+        </div>
+      </article>
+      <article class="card">
+        <div class="img"><span class="tag">Image à fournir</span></div>
+        <div class="body">
+          <span class="cat">Vie de l'association</span>
+          <h3><span class="ph">Titre de l'article — à fournir</span></h3>
+          <div class="meta">Date de publication · Auteur</div>
+          <a class="more" href="#">Lire la suite →</a>
+        </div>
+      </article>
+      <article class="card">
+        <div class="img"><span class="tag">Image à fournir</span></div>
+        <div class="body">
+          <span class="cat">Solidarité</span>
+          <h3><span class="ph">Titre de l'article — à fournir</span></h3>
+          <div class="meta">Date de publication · Auteur</div>
+          <a class="more" href="#">Lire la suite →</a>
+        </div>
+      </article>
+    </div>
+    <div class="news-foot"><a class="btn btn-line" href="#">Toutes les actualités</a></div>
+
+    <div class="event" style="margin-top:44px">
+      <div class="datebox"><span class="d">—</span><span class="m">Mois</span></div>
+      <div>
+        <div class="kick">Prochain événement</div>
+        <h3><span class="ph">Intitulé de l'événement — à fournir</span></h3>
+        <div class="when">
+          <div><span>📍</span><span class="ph">Lieu à fournir</span></div>
+          <div><span>🕒</span><span class="ph">Date et heure à fournir</span></div>
+          <div><span>🎟️</span><span>Inscription en ligne, gratuite ou payante selon l'événement</span></div>
+        </div>
+        <div class="hero-actions" style="margin-top:22px">
+          <a class="btn btn-or" href="#">S'inscrire</a>
+          <a class="btn btn-ghost" href="#">Voir le calendrier</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="adhesion">
+  <div class="wrap adh-grid">
+    <div>
+      <div class="sec-kicker">Adhésion</div>
+      <h2>Rejoindre l'association</h2>
+      <div class="rule"></div>
+      <p style="margin-top:22px">Les montants ci-dessous sont ceux de votre cahier des charges. Ils restent modifiables depuis le tableau de bord, sans toucher au code.</p>
+      <div class="tarifs">
+        <div class="tarif">
+          <div class="t">Droit d'adhésion</div>
+          <div class="v">20 000 <small>FCFA</small></div>
+          <div class="n">Une seule fois, à l'inscription</div>
+        </div>
+        <div class="tarif">
+          <div class="t">Cotisation</div>
+          <div class="v">2 000 <small>FCFA / mois</small></div>
+          <div class="n">Payable au mois, au trimestre ou à l'année</div>
+        </div>
+      </div>
+      <div class="paiement">
+        <div class="lbl">Moyens de paiement prévus</div>
+        <div class="moyens">
+          <span class="moyen">Orange Money</span>
+          <span class="moyen">MTN MoMo</span>
+          <span class="moyen">Wave</span>
+          <span class="moyen">Moov Money</span>
+          <span class="moyen">Carte bancaire</span>
+        </div>
+        <p style="font-size:13.5px;margin-top:14px;color:#9FBCAB">Liste indicative — à confirmer selon l'agrégateur retenu (CinetPay ou PayDunya).</p>
+      </div>
+    </div>
+    <div>
+      <h3 style="color:#fff;font-size:20px;margin-bottom:22px">Comment adhérer</h3>
+      <ol class="etapes">
+        <li><div><strong>Remplir le formulaire</strong><span>Identité, promotion, filière, ville et pays de résidence, profession.</span></div></li>
+        <li><div><strong>Payer le droit d'adhésion</strong><span>Mobile money ou carte, directement en ligne.</span></div></li>
+        <li><div><strong>Validation par le Trésorier</strong><span>Le compte est activé après confirmation du paiement.</span></div></li>
+        <li><div><strong>Accès à l'espace membres</strong><span>Carte de membre numérique, annuaire, documents réservés.</span></div></li>
+      </ol>
+      <div class="hero-actions" style="margin-top:28px">
+        <a class="btn btn-or" href="#">Adhérer maintenant</a>
+        <a class="btn btn-ghost" href="#">Questions fréquentes</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <div class="sec-head">
+      <div class="sec-kicker">Projets et impact</div>
+      <h2>Nos actions et leurs résultats</h2>
+      <p>Chaque projet dispose de ses objectifs, bénéficiaires, résultats, photographies et témoignages. Les chiffres restent vides tant que vous ne les avez pas communiqués.</p>
+    </div>
+    <div class="proj-grid">
+      <article class="proj">
+        <h3><span class="ph">Nom du projet — à fournir</span></h3>
+        <p>Objectif, bénéficiaires et résultats à insérer depuis vos rapports d'activité.</p>
+        <div class="kpi">
+          <div><div class="n">—</div><div class="l">Bénéficiaires</div></div>
+          <div><div class="n">—</div><div class="l">Année</div></div>
+        </div>
+      </article>
+      <article class="proj">
+        <h3><span class="ph">Nom du projet — à fournir</span></h3>
+        <p>Objectif, bénéficiaires et résultats à insérer depuis vos rapports d'activité.</p>
+        <div class="kpi">
+          <div><div class="n">—</div><div class="l">Bénéficiaires</div></div>
+          <div><div class="n">—</div><div class="l">Année</div></div>
+        </div>
+      </article>
+      <article class="proj">
+        <h3><span class="ph">Nom du projet — à fournir</span></h3>
+        <p>Objectif, bénéficiaires et résultats à insérer depuis vos rapports d'activité.</p>
+        <div class="kpi">
+          <div><div class="n">—</div><div class="l">Bénéficiaires</div></div>
+          <div><div class="n">—</div><div class="l">Année</div></div>
+        </div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<div class="partenaires">
+  <div class="wrap">
+    <div class="sec-kicker">Partenaires et sponsors</div>
+    <h2 style="font-size:23px">Ils accompagnent l'association</h2>
+    <div class="logos">
+      <div class="logo-slot">Logo partenaire</div>
+      <div class="logo-slot">Logo partenaire</div>
+      <div class="logo-slot">Logo partenaire</div>
+      <div class="logo-slot">Logo partenaire</div>
+    </div>
+    <p style="margin-top:22px"><a class="btn btn-line" href="#">Devenir partenaire</a></p>
+  </div>
+</div>
+
+<div class="bande">
+  <div class="wrap">
+    <div>
+      <h2>Soutenez les actions de l'association</h2>
+      <p>Don ponctuel par mobile money ou carte bancaire, montant suggéré ou libre, avec accusé de réception automatique par e-mail.</p>
+    </div>
+    <div class="acts">
+      <a class="btn btn-white" href="#">Faire un don</a>
+      <a class="btn btn-ghost" href="#">Nous contacter</a>
+    </div>
+  </div>
+</div>
+
+<footer class="site">
+  <div class="wrap">
+    <div class="f-grid">
+      <div class="f-brand">
+        <div class="brand-name" style="font-family:var(--serif);font-size:18px;font-weight:700">Association des Anciens Étudiants</div>
+        <div class="brand-sub" style="font-size:11px;letter-spacing:.1em;text-transform:uppercase;margin-top:4px">Nom officiel à insérer — Korhogo</div>
+        <p class="f-about"><span class="ph" style="background:rgba(255,255,255,.08);border-bottom-color:rgba(255,255,255,.35);color:#CFE0D5">Courte présentation en deux lignes, à fournir.</span></p>
+        <div class="f-social">
+          <a href="#" aria-label="WhatsApp"><svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2zm5.5 14.2c-.2.7-1.3 1.3-1.9 1.3-.5 0-1.1.2-3.6-.8-3-1.3-4.9-4.4-5-4.6-.2-.2-1.2-1.6-1.2-3s.7-2.1 1-2.4c.3-.3.6-.4.8-.4h.6c.2 0 .4 0 .7.5l1 2.3c.1.2.1.4 0 .6l-.4.6-.3.3c-.1.2-.3.3-.1.6.2.3.8 1.3 1.7 2.1 1.2 1 2.1 1.4 2.4 1.5.3.1.4.1.6-.1l.9-1c.2-.2.4-.2.6-.1l2.1 1c.3.2.5.2.6.4.1.1.1.6-.1 1.2z"/></svg></a>
+          <a href="#" aria-label="Facebook"><svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M13.5 22v-8h2.7l.4-3.1h-3.1V8.9c0-.9.25-1.5 1.55-1.5H16.7V4.6c-.3 0-1.3-.1-2.4-.1-2.4 0-4 1.45-4 4.1v2.3H7.6V14h2.7v8z"/></svg></a>
+          <a href="#" aria-label="LinkedIn"><svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M6.94 6.5a2 2 0 1 1-4 0 2 2 0 0 1 4 0zM3.2 21h3.5V9.2H3.2zm6.2 0h3.5v-6.4c0-1.7 1.1-2.2 1.9-2.2s1.7.6 1.7 2.2V21h3.5v-6.8c0-3.4-1.9-4.9-4-4.9-1.7 0-2.7.9-3.1 1.6V9.2H9.4z"/></svg></a>
+        </div>
+      </div>
+      <div>
+        <h4>L'association</h4>
+        <ul>
+          <li><a href="#">À propos</a></li>
+          <li><a href="#">Bureau exécutif</a></li>
+          <li><a href="#">Commissariat aux comptes</a></li>
+          <li><a href="#">Commissions</a></li>
+          <li><a href="#">Promotions</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Membres</h4>
+        <ul>
+          <li><a href="#">Adhérer</a></li>
+          <li><a href="#">Payer ma cotisation</a></li>
+          <li><a href="#">Annuaire des membres</a></li>
+          <li><a href="#">Solidarité</a></li>
+          <li><a href="#">Opportunités</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Contact</h4>
+        <ul>
+          <li>Siège : Korhogo, Côte d'Ivoire</li>
+          <li><span class="ph" style="background:rgba(255,255,255,.08);border-bottom-color:rgba(255,255,255,.35);color:#CFE0D5">Téléphone à fournir</span></li>
+          <li><span class="ph" style="background:rgba(255,255,255,.08);border-bottom-color:rgba(255,255,255,.35);color:#CFE0D5">Adresse e-mail à fournir</span></li>
+          <li><a href="#">Formulaire de contact</a></li>
+          <li><a href="#">Documents et ressources</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="f-bottom">
+      <div>© 2026 — maquette de présentation, contenus provisoires</div>
+      <ul>
+        <li><a href="#">Mentions légales</a></li>
+        <li><a href="#">Politique de confidentialité</a></li>
+        <li><a href="#">Politique de cookies</a></li>
+        <li><a href="#">Conditions d'utilisation</a></li>
+      </ul>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>
