@@ -44,7 +44,7 @@ header.site .wrap{display:flex;align-items:center;gap:20px;min-height:82px}
 .brand .seal{flex:0 0 auto}
 .brand-txt{min-width:0}
 .brand-name{font-family:var(--serif);font-size:19px;font-weight:700;color:var(--vert);line-height:1.15;letter-spacing:-.015em}
-.brand-sub{font-size:11px;letter-spacing:.1em;text-transform:uppercase;color:var(--gris);margin-top:3px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.brand-sub{display:block;font-size:11px;letter-spacing:.1em;text-transform:uppercase;color:var(--gris);margin-top:3px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
 nav.main{display:none}
 nav.main ul{display:flex;list-style:none;margin:0;padding:0;gap:2px}
 nav.main a{display:block;padding:9px 11px;text-decoration:none;font-size:14.5px;font-weight:500;color:var(--encre);border-radius:4px}
@@ -360,4 +360,19 @@ footer a:hover{color:#fff}
   .membre .portrait{flex:0 0 152px;aspect-ratio:4/5}
   .membre .infos{flex:1;min-width:0}
   .membre.vacant .portrait{border-bottom:0;border-right:1px dashed var(--ligne)}
+}
+
+/* ---------- logo réel ---------- */
+.seal img{display:block;height:60px;width:auto}
+.brand-name{display:block;font-size:23px !important;letter-spacing:.01em;line-height:1.1}
+.medaillon{display:inline-flex;align-items:center;justify-content:center;background:#fff;border-radius:50%;box-shadow:0 2px 14px rgba(0,0,0,.18)}
+.medaillon img{display:block}
+.hero .medaillon{display:flex;width:104px;height:104px;padding:11px;margin-bottom:24px}
+.hero .medaillon img{width:100%;height:auto}
+.page-hero .medaillon{display:flex;width:64px;height:64px;padding:8px;margin-bottom:16px}
+.page-hero .medaillon img{width:100%;height:auto}
+.f-brand .medaillon{display:flex;width:58px;height:58px;padding:7px;margin-bottom:14px}
+.f-brand .medaillon img{width:100%;height:auto}
+@media (min-width:700px){
+  .hero .medaillon{width:124px;height:124px;padding:13px}
 }

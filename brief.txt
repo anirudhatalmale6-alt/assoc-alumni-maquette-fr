@@ -1,0 +1,345 @@
+                                                 2AEU KGO
+           ALUMNI ASSOCIATION OF UNIVERSITÉ PELEFORO GON COULIBALY (FORMERLY URES KORHOGO)
+
+
+
+              WORDPRESS WEBSITE DESIGN AND DEVELOPMENT
+                                    Project brief for freelancers and agencies
+
+ 1. PROJECT OVERVIEW
+We are looking for an experienced WordPress designer and developer to create a modern, professional,
+responsive and user-friendly website for 2AEU KGO, the alumni association of Université Peleforo Gon Coulibaly
+(formerly URES Korhogo), Côte d'Ivoire.
+The association was legally constituted on 29 August 2026 and is governed by an elected Executive Board. Our
+members live in Korhogo, in Abidjan, across Côte d'Ivoire and abroad. The website will become the official home
+of the association.
+Website language: FRENCH. All content is supplied by us in French, and the entire interface menus,
+forms, error messages, automated e-mails must be correctly labelled in French. The technical structure
+must allow an English version to be added later. You may communicate with us in English or French.
+
+Purpose of the website
+   •    Strengthen the visibility and credibility of the association.
+   •    Connect former students of URES Korhogo across promotions and countries.
+   •    Present the association's mission, activities and achievements.
+   •    Promote professional, educational and networking opportunities.
+   •    Encourage new members to join and facilitate the payment of membership fees online.
+   •    Attract institutional, professional and financial partners.
+   •    Give members access to useful information and official documents.
+
+ 2. BRANDING AND VISUAL IDENTITY
+The design must be original and professional, built around our existing identity. Do not deliver a raw out-of-the-
+box template.
+
+ Item                               Requirement
+ Primary colour                     Green #16643E
+ Secondary colour                   Orange #E0761B
+ Logo                               Provided by us (green and orange emblem with hornbill and book)
+ Photographs                        Supplied by us (general assembly, events, members)
+ Typography                         One consistent, highly readable type system across the whole site
+                                    Institutional, warm and dignified — an association of graduates, not a
+ Tone
+                                    start-up
+ Devices                            Mobile-first: the large majority of our members browse on smartphones
+ Performance                        Fast on 3G/4G connections; optimised images; caching enabled
+ Accessibility                      Readable font sizes, sufficient contrast, clear navigation
+
+The final design must reflect the history, values, unity and ambitions of 2AEU KGO. You may propose
+complementary shades and a full palette based on our two official colours, for approval before full design begins.
+Deliver design mockups (home page + two inner pages) for approval BEFORE development starts.
+
+ 3. DESIGN INSPIRATION
+The following websites are provided only as sources of inspiration for structure and atmosphere. The selected
+freelancer must produce an original design and must not copy any of them.
+
+                        2AEU KGO - WordPress Website Design and Development Brief | Page 1 of 7
+   •   France Alumni: https://www.francealumni.fr/fr/
+   •   2iE Alumni: https://alumni.2ie-edu.org/
+   •   LYSMA Alumni Association: https://lysmaalumni.org/
+   •   PLAY International: https://www.play-international.org/
+   •   French Red Cross: https://www.croix-rouge.fr/
+
+ 4. SITE MAP AND PAGE CONTENT
+The structure below is required. You may propose improvements, but every page listed must exist.
+
+4.1 Public pages
+
+01 Homepage
+      – Hero section with logo, association name and slogan
+      – Strong introduction: who we are in three sentences; mission and key objectives
+      – Key figures (members, promotions represented, year founded)
+      – Latest news (three most recent posts) and next upcoming event
+      – Featured projects and achievements
+      – Clear calls to action: « Adhérer », « Payer ma cotisation », « Nous soutenir », « Nous contacter »
+      – Quick links to Statutes, Internal Rules and the membership form
+
+02 About the Association
+       – History of URES Korhogo, of Université Peleforo Gon Coulibaly and of the association
+       – Mission, vision and values
+       – Objectives as set out in the Statutes
+       – Legal information: date of constitution, registered office in Korhogo, declaration references
+
+03 Executive Board
+       – Photo, full name, position and short biography of each board member
+       – Positions: President, Vice-President, Secretary General and Deputy, Treasurer General and Deputy,
+          Communication Officer and Deputy, Organisation and Social Affairs Officer and Deputy
+       – Term of office clearly displayed (2026-2028); vacant seats shown as « Poste à pourvoir »
+       – IMPORTANT: this page must be fully editable from the dashboard after each election, use a custom post
+          type or repeatable blocks, never hard-coded HTML
+
+04 Board of Auditors (Commissariat aux Comptes)
+       – Names, photos and roles of the two auditors
+       – Short explanation of their independent financial control mission
+
+05 Commissions and Committees
+      – One block per standing commission, with its mission and the officer in charge
+
+06 Membership
+      – Membership benefits: solidarity support, network, directory, events, member card
+      – Fees clearly displayed: joining fee 20,000 FCFA (one-off) and dues of 2,000 FCFA per month, payable
+         monthly, quarterly or annually
+      – Step-by-step explanation of how to join
+      – Online membership application form (see section 6)
+      – Membership renewal and payment of dues
+      – Frequently asked questions
+
+07 News and Announcements
+       – Blog structure with categories: Communiqués, Vie de l'association, Solidarité, Université
+       – Featured image, date, author, search and archives by category and year
+       – Social sharing, with WhatsApp first, then Facebook and LinkedIn
+
+08 Events and Calendar
+       – Upcoming and past events with description, location, date and time
+       – Calendar view and online registration form, with optional paid registration
+
+                         2AEU KGO - WordPress Website Design and Development Brief | Page 2 of 7
+         – Photo reports published after each event
+
+09 Projects and Impact
+        – Current and completed projects: objectives, beneficiaries, results
+        – Key figures, photographs and testimonials
+        – A section inviting partners to support a project
+
+10 Professional Opportunities
+        – Job offers, internships, scholarships, training and mentorship opportunities
+        – Filters by category, location and date; expiry date per listing
+        – Listings fully manageable from the dashboard; members may submit an offer for approval
+
+11 Solidarity and Social Benefits
+        – Support provided to members for marriage, birth, bereavement or illness, as set out in the Internal Rules
+        – Online form to report an event or request assistance, routed to the Organisation Officer and the Board
+
+12 Promotions
+       – Presentation of the promotions represented within the association
+       – Public preview of the member directory, with full access reserved to logged-in members
+
+13 Gallery
+        – Photo and video galleries, albums organised by event and by year
+        – Optimised media loading (lazy loading, compressed images)
+
+14 Partners and Sponsors
+        – Partner and sponsor logos, short descriptions and external links
+        – A « Become a partner » section with contact form and downloadable sponsorship proposal
+
+15 Support Us / Donate
+       – One-off donation form with mobile money and card payment
+       – Suggested amounts and free amount; automatic acknowledgement e-mail
+
+16 Documents and Resources
+       – Statutes, Internal Rules, activity reports, minutes of meetings, membership form
+       – Downloadable PDF and Word files, organised by category and year
+       – Access restrictions for confidential documents (members only or board only)
+
+17 Contact
+       – Contact form with spam protection and subject routing (membership, treasury, solidarity, general)
+       – E-mail addresses, telephone numbers, registered office in Korhogo
+       – WhatsApp contact button, social media links and interactive map
+
+18 Legal pages
+       – Legal notice, privacy policy, cookie policy and terms of use
+
+4.2 Members' area (login required)
+   •   Secure registration and login, with password reset; accounts activated only after the Treasurer confirms
+       payment of the joining fee.
+   •   Member dashboard: personal profile, membership status (up to date or late), digital member card showing
+       the member number.
+   •   Online payment of dues, full payment history and downloadable receipts.
+   •   Searchable member directory: by promotion, city, country and occupation.
+   •   Privacy settings allowing each member to hide their telephone number or e-mail address.
+   •   Access to documents and information reserved for members.
+   •   Job and opportunity board where members can post offers for approval.
+   •   Internal announcements from the Board.
+
+ 5. WORDPRESS ADMINISTRATION REQUIREMENTS
+
+                         2AEU KGO - WordPress Website Design and Development Brief | Page 3 of 7
+The administration dashboard must be well organised and usable by people with no technical experience.
+Authorised users must be able to do all of the following without editing code:
+   •      Add, edit and delete pages; update menus and homepage sections.
+   •      Publish news and announcements; create and update events.
+   •      Manage membership applications: approve, reject, edit or suspend member accounts.
+   •      Manage member profiles and the member directory; assign member numbers.
+   •      Manage dues and payment records; see who has paid and who is late; send reminder e-mails and export
+          WhatsApp-ready reminder lists.
+   •      Publish job, internship, scholarship and training opportunities.
+   •      Upload photographs, videos and documents.
+   •      Update the Executive Board page and the Board of Auditors page.
+   •      Add or remove partners and sponsors.
+   •      Review contact form submissions.
+   •      Export the member register to Excel or CSV (required by our Internal Rules).
+   •      Access basic website statistics.
+
+User roles (strictly separated)
+
+ Role                          Held by                                   Permissions
+ Super Admin                   President                                 Full access, user management
+ Secretary                     Secretary General                         Members, documents, pages, minutes
+                                                                         Dues and payments only: no content
+ Treasurer                     Treasurer General
+                                                                         deletion
+                                                                         News, events, gallery: no access to
+ Editor                        Communication Officer
+                                                                         payment data
+
+
+ 6. MEMBERSHIP AND PAYMENT SYSTEM
+Membership application form
+   •      Fields: surname, first names, date and place of birth, nationality, ID document type and number, address,
+          city, country, telephone, WhatsApp, e-mail, faculty or programme, degree, graduation year, promotion,
+          occupation, employer.
+   •      Upload of a passport photograph and of an identity document.
+   •      Beneficiaries section (spouse, children) as provided by our Internal Rules.
+   •      Mandatory checkbox: acceptance of the Statutes and the Internal Rules.
+   •      Automatic confirmation e-mail with receipt; notification to the Treasurer and the Secretary General.
+
+Payment
+   •      Payment gateway: CinetPay or PayDunya. State which you recommend and why.
+   •      Must accept mobile money: Wave, Orange Money, MTN MoMo, Moov Money and Visa/Mastercard, since
+          some of our members live abroad.
+   •      Payments recorded automatically against the member's account; receipts generated and e-mailed.
+   •      Administrators must be able to record an offline payment (cash or bank transfer) manually.
+   •      Test transactions must be demonstrated in a staging environment before go-live.
+   •      The cost of integrating the payment solution must be stated SEPARATELY in your proposal, including any
+          transaction fees and who bears them.
+
+ 7. TECHNICAL REQUIREMENTS
+   •      WordPress CMS, latest stable version, with a professional responsive design.
+   •      Excellent display on desktop, tablet and mobile; tested on real devices.
+   •      French as the primary language, with a technical structure allowing English to be added later.
+
+
+
+                           2AEU KGO - WordPress Website Design and Development Brief | Page 4 of 7
+   •   Fast page loading: target under 3 seconds on a mobile connection; caching and image optimisation
+       configured.
+   •   Basic search engine optimisation: titles, meta descriptions, XML sitemap, structured data (Rank Math or
+       Yoast). SEO plugin configured (Rank Math or Yoast): titles, meta descriptions, XML sitemap, structured
+       data.
+   •   Caching and image optimisation (LiteSpeed Cache, WP Rocket or equivalent); target load time under 3
+       seconds on a mobile connection.
+   •   Google Analytics 4 or an equivalent analytics solution.
+   •   Compatibility with modern browsers and accessibility best practices (readable sizes, contrast, keyboard
+       navigation).
+   •   Contact form e-mail notifications; SPF, DKIM and DMARC configured so that our e-mails are not marked
+       as spam.
+   •   Ensure that you move what you build to the host and ensure that all configuration work accordingly
+   •   Any premium theme, paid plugin, licence or recurring subscription must be identified clearly. No paid
+       product or recurring cost may be added without our prior approval.
+
+ 8. SECURITY REQUIREMENTS (MANDATORY)
+The site will hold personal data of members including identity documents and will process payments. Security is
+not optional. You must implement and document all of the following:
+   •   Web application firewall and malware scanning (Wordfence, Sucuri or equivalent), with alerting.
+   •   SSL/HTTPS enforced across the whole site, with automatic certificate renewal.
+   •   Two-factor authentication (2FA) for all administrator and editor accounts.
+   •   Custom login URL, limited login attempts and automatic lockout after repeated failures.
+   •   Strong password policy for all privileged accounts.
+   •   Automated daily backups stored off-site (UpdraftPlus or equivalent), with a documented restore procedure
+       and one restore test performed in front of us.
+   •   Activity log recording every administrative action (WP Activity Log or equivalent).
+   •   Anti-spam and CAPTCHA on all public forms (Akismet, CleanTalk, hCaptcha or Turnstile).
+   •   Protection of uploaded files: no public directory listing, restricted access to identity documents and
+       photographs.
+   •   Database hardening: changed table prefix, file editing disabled in the dashboard, hardened wp-config.
+   •   Security headers (HSTS, X-Frame-Options, Content-Security-Policy); XML-RPC disabled if not required.
+   •   Strict role-based access control, applied as set out in section 5.
+   •   Cookie consent system and GDPR-compatible management of personal data, including a documented
+       procedure to delete a member's data on request.
+   •   All plugins and themes from reputable sources, licensed and kept updatable.
+
+ 9. EXPECTED DELIVERABLES
+   •   Proposed sitemap and structure, validated with us before design.
+   •   Homepage wireframe or mock-up, plus two inner pages, approved BEFORE development starts.
+   •   Proposed colour palette and typography based on our official colours.
+   •   Complete WordPress design and development, with all necessary plugins installed and configured.
+   •   Development of the members' area and configuration of the membership and payment system.
+   •   Initial integration of the content supplied by the association.
+   •   Testing: mobile, tablet, desktop, browser compatibility, performance and image optimisation.
+   •   Security and backup configuration, with the restore test described in section 8.
+   •   Deployment on the association's domain and hosting account.
+   •   Full administrator access and transfer of all files, licences and credentials.
+   •   A simple written administration guide IN ENGLISH (PDF), covering: publishing a news post, creating an
+       event, updating the Executive Board page, approving a member, checking payments, exporting the
+       member register.
+   •   At least two online training sessions for our administrators, recorded so that future officers can watch them.
+
+                         2AEU KGO - WordPress Website Design and Development Brief | Page 5 of 7
+   •      Correction of all identified errors before final approval.
+   •      At least 60 days of technical support after launch, covering bug fixing at no extra cost.
+
+
+
+
+ 10. OWNERSHIP
+Upon final payment, 2AEU KGO must receive:
+   •      Full ownership of the website.
+   •      Full WordPress administrator access.
+   •      Access to the domain and hosting configuration.
+   •      Access to all plugins, themes and licences purchased for the project, registered in the association's name.
+   •      All original design files, source files and website backups.
+   •      The right to modify, maintain or transfer the website in the future.
+The website must not depend permanently on the freelancer's personal accounts, licences or hosting.
+
+ 11. FREELANCER PROFILE
+   •      Proven experience in WordPress design and development.
+   •      Experience with association, nonprofit, community or alumni websites.
+   •      Experience building secure members' areas.
+   •      Experience with membership systems and online payment mobile money integration is a DECISIVE
+          criterion.
+   •      Strong user interface and user experience design skills.
+   •      Good knowledge of WordPress security, performance and SEO.
+   •      Good communication, ability to meet deadlines and to provide regular progress updates.
+
+ 12. INFORMATION TO INCLUDE IN YOUR PROPOSAL
+   •      A short presentation of your experience.
+   •      Links to at least two WordPress websites you have completed, ideally for associations, nonprofits or alumni
+          networks.
+   •      Evidence of previous mobile money integration (CinetPay, PayDunya or similar).
+   •      Your proposed technical approach: theme, page builder and plugin stack.
+   •      Your estimated timeline with milestones.
+   •      Your fixed total price and a detailed list of the services it includes.
+   •      The separate cost of the membership and payment system.
+   •      A list of any premium plugins, licences or recurring costs, priced separately from your fee.
+   •      The number of design revisions included.
+   •      Details of your after-launch support.
+   •      Confirmation that the association will receive full ownership and administrator access.
+   •      The content and materials you will require from us, and by when.
+
+ 13. PRACTICAL INFORMATION
+ Item                                  Detail
+ Client                                2AEU KGO - alumni association, Korhogo, Côte d'Ivoire
+ Content                               Supplied by us in French (texts, logo, photographs, PDF documents)
+ Expected duration                     [………………………………..]
+ Contact                               [name, e-mail, WhatsApp]
+ Payment terms                         Milestones: on mock-up approval, on staging delivery, on go-live
+
+
+We are looking for a reliable and creative professional able to deliver both a strong visual identity and a practical
+WordPress website that our administrators can easily manage over time.
+                           2AEU KGO - WordPress Website Design and Development Brief | Page 6 of 7
+Please send your proposal with the subject line: « 2AEU KGO - Website proposal ».
+
+
+
+
+         2AEU KGO - WordPress Website Design and Development Brief | Page 7 of 7
+
